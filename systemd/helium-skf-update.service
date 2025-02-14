@@ -1,0 +1,13 @@
+[Unit]
+Description=Helium SKF Update Service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=[replace this bracketed content with the path to the update_service.sh script]
+User=[replace this bracketed content with your system user name. Default is ubuntu]
+Group=[replace this bracketed content with your system group name. Default is ubuntu]
+WorkingDirectory=[replace this bracketed content with the path to the helium-chirpstack-key-manager directory]
+
+[Install]
+WantedBy=multi-user.target

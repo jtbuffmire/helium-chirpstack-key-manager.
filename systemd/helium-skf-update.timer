@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Helium SKF Update hourly
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target
